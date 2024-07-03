@@ -71,7 +71,6 @@ function App() {
       });
 
       const data = response.data;
-      console.log(data);
 
       setMessages([
         ...chatMessages,
@@ -88,7 +87,7 @@ function App() {
 
   return (
     <div className="App">
-      <div style={{ position: "relative", height: "90vh", width: "700px" }}>
+      <div style={{ position: "relative", height: "85vh", width: "80vw" }}>
         <MainContainer>
           <ChatContainer>
             <MessageList
@@ -100,7 +99,6 @@ function App() {
               }
             >
               {messages.map((message, i) => {
-                console.log(message);
                 return <Message key={i} model={message} />;
               })}
             </MessageList>
