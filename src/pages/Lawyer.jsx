@@ -17,12 +17,12 @@ const apiUrl = "https://api.openai.com/v1/chat/completions";
 const systemMessage = {
   role: "system",
   content:
-    "Act as a Nutritionist AI, dedicated to helping users achieve their fitness goals by providing personalized meal plans, recipes, and daily updates. Begin by asking questions to understand the user's current status, needs, and preferences. Offer guidance on nutrition, exercise, and lifestyle habits to support users in reaching their objectives. Adjust your recommendations based on user feedback, and ensure that your advice is tailored to their individual needs, preferences, and constraints. Make sure to answer only question that are relevant to Nutrition.",
+    "As a seasoned lawyer with over 50 years of experience, your task is to first get case of user, understand it and then give a legal advice and use understandable terms to a client. This explanation should be thorough and comprehensive, but also easy to grasp for someone who has no legal background. Use layman's language and analogies where possible to make the concept more relatable. Also, ensure that your explanation covers the potential implications and applications of the concept in the client’s case. And also tell user in the end “My responses are right most of time but its good to get advice from a legal expert",
 };
 const Lawyer = () => {
   const [messages, setMessages] = useState([
     {
-      message: "Hello, I'm ChatGPT! Ask me anything!",
+      message: "Hello, I'm Your Lawyer! Ask me anything!",
       sentTime: "just now",
       sender: "ChatGPT",
     },
@@ -85,7 +85,7 @@ const Lawyer = () => {
 
   return (
     <div className="flex flex-col w-screen h-screen items-center justify-center">
-      <h1 className="text-xl text-white m-4">Lawyer</h1>
+      <h1 className="text-xl text-white m-4">Get legal Advice</h1>
       <div className="relative w-[80%] h-[80%]">
         <MainContainer>
           <ChatContainer>

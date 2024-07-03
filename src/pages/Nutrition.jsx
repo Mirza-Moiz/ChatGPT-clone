@@ -24,7 +24,7 @@ const Nutrition = () => {
   const [messages, setMessages] = useState([
     {
       message:
-        "Hello, I'm Your AI nutritionist! Ask me anything relatedto nutrition!",
+        "Hello, I'm Your AI nutritionist! Ask me anything related to nutrition!",
       sentTime: "just now",
       sender: "ChatGPT",
     },
